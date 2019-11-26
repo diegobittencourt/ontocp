@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/diego/ontologies/2019/10/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/diego/ontologies/2019/10/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/diego/ontologies/2019/10/untitled-ontology-9"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#C-NOT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#C-Phase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#C-Swap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#C-Z"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Controlled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DensityMatrix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hadamard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinearOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MixState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PI8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pauli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProbabilityAmplitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PureState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qubit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toffoli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Y"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Z"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dataIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dataOut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#equivalentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasApplicationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComplexNumber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProbabilityAplitude"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isApplyIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComplexNumberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProbabilityAmplitudeOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#false"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#imaginaryValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#realValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#true"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#C-NOT"/>
+        <Class IRI="#Controlled"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C-Phase"/>
+        <Class IRI="#Controlled"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C-Swap"/>
+        <Class IRI="#Controlled"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#C-Z"/>
+        <Class IRI="#Controlled"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Controlled"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hadamard"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LinearOperator"/>
+        <Class IRI="#Port"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measure"/>
+        <Class IRI="#SuperOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MixState"/>
+        <Class IRI="#DensityMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PI8"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pauli"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phase"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#SuperOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PureState"/>
+        <Class IRI="#DensityMatrix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swap"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toffoli"/>
+        <Class IRI="#LinearOperator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#X"/>
+        <Class IRI="#Pauli"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Y"/>
+        <Class IRI="#Pauli"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Z"/>
+        <Class IRI="#Pauli"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dataIn"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dataOut"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#equivalentTo"/>
+        <Class IRI="#Qubit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasApplicationOf"/>
+        <Class IRI="#DensityMatrix"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#Qubit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComplexNumber"/>
+        <Class IRI="#ProbabilityAmplitude"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProbabilityAplitude"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isApplyIn"/>
+        <Class IRI="#SuperOperator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComplexNumberOf"/>
+        <Class IRI="#ComplexNumber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProbabilityAmplitudeOf"/>
+        <Class IRI="#ProbabilityAmplitude"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dataIn"/>
+        <Class IRI="#DensityMatrix"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dataOut"/>
+        <Class IRI="#DensityMatrix"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#equivalentTo"/>
+        <Class IRI="#PureState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasApplicationOf"/>
+        <Class IRI="#SuperOperator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#Base"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComplexNumber"/>
+        <Class IRI="#ComplexNumber"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProbabilityAplitude"/>
+        <Class IRI="#ProbabilityAmplitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isApplyIn"/>
+        <Class IRI="#DensityMatrix"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <Class IRI="#Qubit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComplexNumberOf"/>
+        <Class IRI="#ProbabilityAmplitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProbabilityAmplitudeOf"/>
+        <Class IRI="#Base"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#false"/>
+        <Class IRI="#Base"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#imaginaryValue"/>
+        <Class IRI="#ComplexNumber"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#realValue"/>
+        <Class IRI="#ComplexNumber"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#true"/>
+        <Class IRI="#Base"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#false"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#imaginaryValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#realValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#true"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
